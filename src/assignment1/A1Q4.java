@@ -41,6 +41,8 @@ public class A1Q4 {
         tina.turnLeft();
         tina.turnLeft();
         hammy.turnLeft();
+        tina.move();
+        hammy.move();
         
     }
 }
