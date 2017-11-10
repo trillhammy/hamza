@@ -23,7 +23,7 @@ public class A2Q4 {
         //create a city
         City kitchener = new City();
         //create a robot
-        Robot hammy = new Robot (kitchener,0,0, Direction.EAST);
+        Robot hammy = new Robot(kitchener, 0, 0, Direction.EAST);
         //create walls
         new Wall(kitchener, 2, 3, Direction.EAST);
         new Wall(kitchener, 3, 3, Direction.EAST);
@@ -51,122 +51,122 @@ public class A2Q4 {
         new Wall(kitchener, 4, 4, Direction.NORTH);
         new Wall(kitchener, 4, 4, Direction.WEST);
         //get hammy to move
-        while(!hammy.canPickThing()){
-            while(hammy.getAvenue()!= 2){
+        while (!hammy.canPickThing()) {
+            while (hammy.getAvenue() != 2) {
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.SOUTH) {
+                hammy.turnLeft();
+            }
             hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.SOUTH){
-            hammy.turnLeft();
-        }
-        hammy.move();
-        if(hammy.frontIsClear()){
+            if (hammy.frontIsClear()) {
+                hammy.move();
+            } else {
+                hammy.turnLeft();
+                hammy.move();
+            }
+            if (hammy.frontIsClear()) {
+                hammy.move();
+            } else {
+                hammy.turnLeft();
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.EAST) {
+                hammy.turnLeft();
+            }
+            while (hammy.getAvenue() != 5) {
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.SOUTH) {
+                hammy.turnLeft();
+            }
+            while (hammy.getStreet() != 2) {
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.WEST) {
+                hammy.turnLeft();
+            }
             hammy.move();
-        }else{
-            hammy.turnLeft();
+            if (hammy.frontIsClear()) {
+                hammy.move();
+            } else {
+                hammy.turnLeft();
+                hammy.move();
+            }
+            if (hammy.frontIsClear()) {
+                hammy.move();
+            } else {
+                hammy.turnLeft();
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.SOUTH) {
+                hammy.turnLeft();
+            }
+            while (hammy.getStreet() != 5) {
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.SOUTH) {
+                hammy.turnLeft();
+            }
+            while (hammy.getDirection() != Direction.WEST) {
+                hammy.turnLeft();
+            }
+            while (hammy.getAvenue() != 3) {
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.NORTH) {
+                hammy.turnLeft();
+            }
             hammy.move();
-        }
-        if(hammy.frontIsClear()){
+            if (hammy.frontIsClear()) {
+                hammy.move();
+            } else {
+                hammy.turnLeft();
+                hammy.move();
+            }
+            if (hammy.frontIsClear()) {
+                hammy.move();
+            } else {
+                hammy.turnLeft();
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.WEST) {
+                hammy.turnLeft();
+            }
+            while (hammy.getAvenue() != 0) {
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.NORTH) {
+                hammy.turnLeft();
+            }
+            while (hammy.getStreet() != 3) {
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.EAST) {
+                hammy.turnLeft();
+            }
             hammy.move();
-        }else{
-            hammy.turnLeft();
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.EAST){
-            hammy.turnLeft();
-        }
-        while(hammy.getAvenue()!= 5){
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.SOUTH){
-            hammy.turnLeft();
-        }
-        while(hammy.getStreet()!= 2){
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.WEST){
-            hammy.turnLeft();
-        }
-        hammy.move();
-        if(hammy.frontIsClear()){
-            hammy.move();
-        }else{
-            hammy.turnLeft();
-            hammy.move();
-        }
-        if(hammy.frontIsClear()){
-            hammy.move();
-        }else{
-            hammy.turnLeft();
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.SOUTH){
-            hammy.turnLeft();
-        }
-        while(hammy.getStreet()!= 5){
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.SOUTH){
-            hammy.turnLeft();
-        }
-        while(hammy.getDirection()!= Direction.WEST){
-            hammy.turnLeft();
-        }
-         while(hammy.getAvenue()!= 3){
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.NORTH){
-            hammy.turnLeft();
-        }
-        hammy.move();
-        if(hammy.frontIsClear()){
-            hammy.move();
-        }else{
-            hammy.turnLeft();
-            hammy.move();
-        }
-        if(hammy.frontIsClear()){
-            hammy.move();
-        }else{
-            hammy.turnLeft();
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.WEST){
-            hammy.turnLeft();
-        }
-        while(hammy.getAvenue()!= 0){
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.NORTH){
-            hammy.turnLeft();
-        }
-        while(hammy.getStreet()!= 3){
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.EAST){
-            hammy.turnLeft();
-        }
-        hammy.move();
-        if(hammy.frontIsClear()){
-            hammy.move();
-        }else{
-            hammy.turnLeft();
-            hammy.move();
-        }
-        if(hammy.frontIsClear()){
-            hammy.move();
-        }else{
-            hammy.turnLeft();
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.NORTH){
-            hammy.turnLeft();
-        }
-        while(hammy.getStreet()!= 0){
-            hammy.move();
-        }
-        while(hammy.getDirection()!= Direction.EAST){
-            hammy.turnLeft();
-        }
+            if (hammy.frontIsClear()) {
+                hammy.move();
+            } else {
+                hammy.turnLeft();
+                hammy.move();
+            }
+            if (hammy.frontIsClear()) {
+                hammy.move();
+            } else {
+                hammy.turnLeft();
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.NORTH) {
+                hammy.turnLeft();
+            }
+            while (hammy.getStreet() != 0) {
+                hammy.move();
+            }
+            while (hammy.getDirection() != Direction.EAST) {
+                hammy.turnLeft();
+            }
         }
     }
 }
